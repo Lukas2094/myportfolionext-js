@@ -1,7 +1,7 @@
 import { GetServerSideProps, NextPage } from 'next';
 import axios from 'axios';
 import * as S from '../styles/styles';
-
+import { Header } from '../components/Header';
 type Repository = {
   id: number;
   name: string;
@@ -19,14 +19,9 @@ const Home: NextPage<Props> = ({ repositories }) => {
   
   return (
     <>
+    <Header />
 
-    <S.HeaderContainer position="static">
-      <S.HeaderToolBar>
-        <S.HeaderTitle variant="h6">Meu Header</S.HeaderTitle>
-      </S.HeaderToolBar>
-    </S.HeaderContainer>
-
-      <div>
+      {/* <div>
         {repositories.map((repository) => (
           <div key={repository.id}>
             <h2>{repository.name}</h2>
@@ -35,7 +30,7 @@ const Home: NextPage<Props> = ({ repositories }) => {
             <a href={repository.html_url}>GitHub Repository</a>
           </div>
         ))}
-      </div>
+      </div> */}
     </>
 
   );
