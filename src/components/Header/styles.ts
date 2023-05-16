@@ -4,6 +4,7 @@ import Typography from '@mui/material/Typography';
 import Avatar from '@mui/material/Avatar';
 import Stack from '@mui/material/Stack';
 import { styled } from '@mui/material/styles';
+import { Box, Link } from '@mui/material';
 
 
 export const HeaderContainer = styled(AppBar)`
@@ -17,6 +18,27 @@ export const HeaderToolBar = styled(Toolbar)`
 export const HeaderTitle = styled(Typography)`
   flex-grow: 1;
 `;
-
 export const StackRow = styled(Stack)``;
+
 export const MyAvatar = styled(Avatar)``;
+
+export const BoxContain = styled(Box)`
+    width: 85%;
+    display:flex;
+    align-items:center;
+    justify-content: space-between;
+    margin-left: 20px;
+
+    @media(min-width: 1024px){
+      width: 25%;
+    }
+`;
+
+export const Links = styled(Link)`
+    font-size: 16px;
+    text-decoration: none;
+
+    :hover {
+      font-size: 18px;
+    }
+`;
