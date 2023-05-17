@@ -12,7 +12,11 @@ export const HeaderContainer = styled(AppBar)`
   padding: 10px;
 `;
 export const HeaderToolBar = styled(Toolbar)`
-  margin: 0 30px;
+  margin: 0 20px;
+
+  @media(min-width: 1024px) {
+    margin: 0 30px;
+  }
 `;
 
 export const HeaderTitle = styled(Typography)`

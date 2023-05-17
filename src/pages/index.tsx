@@ -2,6 +2,7 @@ import { GetServerSideProps, NextPage } from 'next';
 import axios from 'axios';
 import * as S from '../styles/styles';
 import { Header } from '../components/Header';
+import { Carrousel } from '../components/Carrousel';
 type Repository = {
   id: number;
   name: string;
@@ -20,7 +21,7 @@ const Home: NextPage<Props> = ({ repositories }) => {
   return (
     <>
     <Header />
-
+    <Carrousel />
       {/* <div>
         {repositories.map((repository) => (
           <div key={repository.id}>

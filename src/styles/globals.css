@@ -88,13 +88,14 @@ body {
 }
 
 body {
-  background: transparent linear-gradient(265deg,#001f3f,#1d6cc0);
+  background: #001f3f;
   font-family: 'Montserrat', sans-serif;
 }
 
 @media(max-width: 768px) {
   body {
-    background: #001f3f;
+    /* background: #001f3f; */
+    background: url('../../public/imgs/background.jpg') 83% 100%;
   }
 }
 
