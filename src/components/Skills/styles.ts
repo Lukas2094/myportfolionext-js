@@ -2,6 +2,10 @@ import { Container, Typography, Accordion, AccordionSummary, AccordionDetails } 
 import { styled } from '@mui/material/styles';
 import {AiOutlineHtml5} from 'react-icons/ai';
 import {IoLogoCss3} from 'react-icons/io';
+import {TbBrandJavascript} from 'react-icons/tb';
+import {FaReact} from 'react-icons/fa';
+import {RiVuejsFill} from 'react-icons/ri';
+import {SiPhp} from 'react-icons/si';
 
 export const Contain = styled('div')`
     width: 100%;
@@ -64,7 +68,7 @@ export const ContainCards = styled("div")`
     flex-wrap: nowrap;
 
     padding: 20px;
-    
+
     max-width: 650px;
 `;
 
@@ -84,6 +88,7 @@ export const TypeTyphographCard = styled(Typography)`
 
     color: black;
     font-size: 16px !important;
+    padding: 0 15px;
 `;
 
 export const DetailsCard = styled(AccordionDetails)``;
@@ -105,6 +110,52 @@ export const IconCSS = styled(IoLogoCss3)`
     height: 20px;
     margin: 0 10px;
     color: #0065f4;
+
+    @media(min-width: 1024px){
+        width: 80px;
+        height: 80px;
+    }
+`;
+
+export const IconJS = styled(TbBrandJavascript)`
+    width: 20px;
+    height: 20px;
+    margin: 0 10px;
+    color: #F0DB4F;
+
+    @media(min-width: 1024px){
+        width: 80px;
+        height: 80px;
+    }
+`;
+export const IconReact = styled(FaReact)`
+    width: 20px;
+    height: 20px;
+    margin: 0 10px;
+    color: #61DBFB;
+
+    @media(min-width: 1024px){
+        width: 80px;
+        height: 80px;
+    }
+`;
+
+export const IconVue = styled(RiVuejsFill)`
+    width: 20px;
+    height: 20px;
+    margin: 0 10px;
+    color:  #41b883;
+
+    @media(min-width: 1024px){
+        width: 80px;
+        height: 80px;
+    }
+`;
+export const IconPhp = styled(SiPhp)`
+    width: 20px;
+    height: 20px;
+    margin: 0 10px;
+    color:  #474a8a;
 
     @media(min-width: 1024px){
         width: 80px;

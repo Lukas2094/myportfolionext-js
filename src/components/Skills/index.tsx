@@ -30,11 +30,12 @@ export function Skills() {
                             <S.IconHTML /> HTML 5
                         </S.TypeTyphographCard>
                     </S.WrapperSummary>
+
                     <S.DetailsCard>
-                    <S.TypeTyphographCard>
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse
-                        malesuada lacus ex, sit amet blandit leo lobortis eget.
-                    </S.TypeTyphographCard>
+                        <S.TypeTyphographCard>
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse
+                            malesuada lacus ex, sit amet blandit leo lobortis eget.
+                        </S.TypeTyphographCard>
                     </S.DetailsCard>
                 </S.Wrapper>
 
@@ -49,12 +50,85 @@ export function Skills() {
                         </S.TypeTyphographCard>
                     </S.WrapperSummary>
                     <S.DetailsCard>
-                    <S.TypeTyphographCard>
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse
-                        malesuada lacus ex, sit amet blandit leo lobortis eget.
-                    </S.TypeTyphographCard>
+                        <S.TypeTyphographCard>
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse
+                            malesuada lacus ex, sit amet blandit leo lobortis eget.
+                        </S.TypeTyphographCard>
                     </S.DetailsCard>
                 </S.Wrapper>
+
+                <S.Wrapper>
+                    <S.WrapperSummary
+                    expandIcon={<ExpandMore />}
+                    aria-controls="panel1a-content"
+                    id="panel1a-header"
+                    >
+                        <S.TypeTyphographCard fontWeight={'bold !important'}>
+                            <S.IconJS /> JavaScript
+                        </S.TypeTyphographCard>
+                    </S.WrapperSummary>
+                    <S.DetailsCard>
+                        <S.TypeTyphographCard>
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse
+                            malesuada lacus ex, sit amet blandit leo lobortis eget.
+                        </S.TypeTyphographCard>
+                    </S.DetailsCard>
+                </S.Wrapper>
+
+                <S.Wrapper>
+                    <S.WrapperSummary
+                    expandIcon={<ExpandMore />}
+                    aria-controls="panel1a-content"
+                    id="panel1a-header"
+                    >
+                        <S.TypeTyphographCard fontWeight={'bold !important'}>
+                            <S.IconReact /> ReactJS
+                        </S.TypeTyphographCard>
+                    </S.WrapperSummary>
+                    <S.DetailsCard>
+                        <S.TypeTyphographCard>
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse
+                            malesuada lacus ex, sit amet blandit leo lobortis eget.
+                        </S.TypeTyphographCard>
+                    </S.DetailsCard>
+                </S.Wrapper>
+
+                <S.Wrapper>
+                    <S.WrapperSummary
+                    expandIcon={<ExpandMore />}
+                    aria-controls="panel1a-content"
+                    id="panel1a-header"
+                    >
+                        <S.TypeTyphographCard fontWeight={'bold !important'}>
+                            <S.IconVue /> VueJS
+                        </S.TypeTyphographCard>
+                    </S.WrapperSummary>
+                    <S.DetailsCard>
+                        <S.TypeTyphographCard>
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse
+                            malesuada lacus ex, sit amet blandit leo lobortis eget.
+                        </S.TypeTyphographCard>
+                    </S.DetailsCard>
+                </S.Wrapper>
+
+                <S.Wrapper>
+                    <S.WrapperSummary
+                    expandIcon={<ExpandMore />}
+                    aria-controls="panel1a-content"
+                    id="panel1a-header"
+                    >
+                        <S.TypeTyphographCard fontWeight={'bold !important'}>
+                            <S.IconPhp /> PHP
+                        </S.TypeTyphographCard>
+                    </S.WrapperSummary>
+                    <S.DetailsCard>
+                        <S.TypeTyphographCard>
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse
+                            malesuada lacus ex, sit amet blandit leo lobortis eget.
+                        </S.TypeTyphographCard>
+                    </S.DetailsCard>
+                </S.Wrapper>
+
                 </S.ContainCards>
 
 
