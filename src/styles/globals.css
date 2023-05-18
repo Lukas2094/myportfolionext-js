@@ -94,8 +94,8 @@ body {
 
 @media(max-width: 768px) {
   body {
-    /* background: #001f3f; */
-    background: url('../../public/imgs/background.jpg') 83% 100%;
+    background: #001f3f;
+    /* background: url('../../public/imgs/background.jpg') 83% 100%; */
   }
 }
 

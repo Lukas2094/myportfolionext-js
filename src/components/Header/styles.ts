@@ -4,12 +4,15 @@ import Typography from '@mui/material/Typography';
 import Avatar from '@mui/material/Avatar';
 import Stack from '@mui/material/Stack';
 import { styled } from '@mui/material/styles';
-import { Box, Link, Tabs } from '@mui/material';
+import { Box, Tabs } from '@mui/material';
 
 
 export const HeaderContainer = styled(AppBar)`
   background-color: #000;
   padding: 10px;
+  position: fixed;
+  top: 0;
+  z-index: 50;
 `;
 export const HeaderToolBar = styled(Toolbar)`
   margin: 0 20px;
@@ -22,9 +25,22 @@ export const HeaderToolBar = styled(Toolbar)`
 export const HeaderTitle = styled(Typography)`
   flex-grow: 1;
 `;
-export const StackRow = styled(Stack)``;
+export const StackRow = styled(Stack)`
+   @media(min-width: 1024px) {
+    margin: 0 70px;
+   }
+`;
 
-export const MyAvatar = styled(Avatar)``;
+export const MyAvatar = styled(Avatar)`
+    
+    border: 2px solid White;
+
+    img {
+      width: 100%;
+      height: auto;
+      object-fit: cover;
+    }
+`;
 
 export const BoxContain = styled(Box)`
     width: 100%;

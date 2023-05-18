@@ -1,6 +1,6 @@
 import React from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
-import { EffectFade, Navigation, Pagination } from "swiper";
+import { EffectFade, Navigation, Pagination , Autoplay } from "swiper";
 // Import Swiper styles
 import "swiper/css";
 import "swiper/css/effect-fade";
@@ -14,13 +14,18 @@ export function Carrousel() {
         <>
             <S.Container>
                 <Swiper
+                autoplay={{
+                    delay: 2500,
+                    disableOnInteraction: false,
+                }}
+                centeredSlides={true}
                 spaceBetween={30}
                 effect={"fade"}
-                navigation={true}
+                navigation={false}
                 pagination={{
                 clickable: true,
                 }}
-                modules={[EffectFade, Navigation, Pagination]}
+                modules={[EffectFade, Navigation, Pagination , Autoplay]}
                 className="mySwiper"
             >
                     <SwiperSlide>
