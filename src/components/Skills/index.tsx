@@ -1,11 +1,7 @@
 import React from "react";
 import * as S from './styles';
 import { ExpandMore } from "@material-ui/icons";
-import Accordion from '@mui/material/Accordion';
-import AccordionSummary from '@mui/material/AccordionSummary';
-import AccordionDetails from '@mui/material/AccordionDetails';
-import Typography from '@mui/material/Typography';
-import {AiOutlineHtml5} from 'react-icons/ai';
+
 export function Skills() {
     return (
         <S.Contain>
@@ -22,109 +18,90 @@ export function Skills() {
             <S.ContainCards>
                 <S.Wrapper>
                     <S.WrapperSummary
-                    expandIcon={<ExpandMore />}
+                    expandIcon={<ExpandMore style={{color: '#FFF'}} />}
                     aria-controls="panel1a-content"
                     id="panel1a-header"
                     >
                         <S.TypeTyphographCard fontWeight={'bold !important'}>
-                            <S.IconHTML /> HTML 5
+                            <S.IconHTML /> 
                         </S.TypeTyphographCard>
                     </S.WrapperSummary>
 
                     <S.DetailsCard>
                         <S.TypeTyphographCard>
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse
-                            malesuada lacus ex, sit amet blandit leo lobortis eget.
+                         HTML 5 / HTML
                         </S.TypeTyphographCard>
                     </S.DetailsCard>
                 </S.Wrapper>
 
                 <S.Wrapper>
                     <S.WrapperSummary
-                    expandIcon={<ExpandMore />}
+                    expandIcon={<ExpandMore style={{color: '#FFF'}} />}
                     aria-controls="panel1a-content"
                     id="panel1a-header"
                     >
                         <S.TypeTyphographCard fontWeight={'bold !important'}>
-                            <S.IconCSS /> CSS 3
+                            <S.IconCSS /> <S.IconSass /> <S.IconBootStrap /> <S.IconTailwind />
                         </S.TypeTyphographCard>
                     </S.WrapperSummary>
                     <S.DetailsCard>
                         <S.TypeTyphographCard>
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse
-                            malesuada lacus ex, sit amet blandit leo lobortis eget.
+                            CSS 3 / Sass / Scss / Styled-components / Material Ui / BootStrap / Tailwind CSS
                         </S.TypeTyphographCard>
                     </S.DetailsCard>
                 </S.Wrapper>
 
                 <S.Wrapper>
                     <S.WrapperSummary
-                    expandIcon={<ExpandMore />}
+                    expandIcon={<ExpandMore style={{color: '#FFF'}} />}
                     aria-controls="panel1a-content"
                     id="panel1a-header"
                     >
                         <S.TypeTyphographCard fontWeight={'bold !important'}>
-                            <S.IconJS /> JavaScript
+                            <S.WrapperSummary>
+                               <S.IconJS /> <S.IconReact /> <S.IconVue /> <S.IconAngular /> <S.IconNext /> 
+                            </S.WrapperSummary>
                         </S.TypeTyphographCard>
                     </S.WrapperSummary>
                     <S.DetailsCard>
                         <S.TypeTyphographCard>
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse
-                            malesuada lacus ex, sit amet blandit leo lobortis eget.
+                            JavaScript / TypeScript / ReactJS / VueJS / AngularJS / NextJS
+                        </S.TypeTyphographCard>
+                    </S.DetailsCard>
+                </S.Wrapper>
+
+
+                <S.Wrapper>
+                    <S.WrapperSummary
+                    expandIcon={<ExpandMore style={{color: '#FFF'}} />}
+                    aria-controls="panel1a-content"
+                    id="panel1a-header"
+                    >
+                        <S.TypeTyphographCard fontWeight={'bold !important'}>
+                            <S.IconPhp /> <S.IconMySQL /> <S.IconMariaDB /> <S.IconPostSQL /> <S.IconGraphQl />
+                        </S.TypeTyphographCard>
+                    </S.WrapperSummary>
+                    <S.DetailsCard>
+                        <S.TypeTyphographCard>
+                            PHP / MySQL / MariaDB / PostgreSQL / GraphQL
                         </S.TypeTyphographCard>
                     </S.DetailsCard>
                 </S.Wrapper>
 
                 <S.Wrapper>
                     <S.WrapperSummary
-                    expandIcon={<ExpandMore />}
+                    expandIcon={<ExpandMore style={{color: '#FFF'}} />}
                     aria-controls="panel1a-content"
                     id="panel1a-header"
                     >
                         <S.TypeTyphographCard fontWeight={'bold !important'}>
-                            <S.IconReact /> ReactJS
+                            <S.IconWindow /> <S.IconLinux /> <S.IconMAC />
                         </S.TypeTyphographCard>
+                        SISTEMAS
                     </S.WrapperSummary>
                     <S.DetailsCard>
                         <S.TypeTyphographCard>
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse
-                            malesuada lacus ex, sit amet blandit leo lobortis eget.
-                        </S.TypeTyphographCard>
-                    </S.DetailsCard>
-                </S.Wrapper>
-
-                <S.Wrapper>
-                    <S.WrapperSummary
-                    expandIcon={<ExpandMore />}
-                    aria-controls="panel1a-content"
-                    id="panel1a-header"
-                    >
-                        <S.TypeTyphographCard fontWeight={'bold !important'}>
-                            <S.IconVue /> VueJS
-                        </S.TypeTyphographCard>
-                    </S.WrapperSummary>
-                    <S.DetailsCard>
-                        <S.TypeTyphographCard>
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse
-                            malesuada lacus ex, sit amet blandit leo lobortis eget.
-                        </S.TypeTyphographCard>
-                    </S.DetailsCard>
-                </S.Wrapper>
-
-                <S.Wrapper>
-                    <S.WrapperSummary
-                    expandIcon={<ExpandMore />}
-                    aria-controls="panel1a-content"
-                    id="panel1a-header"
-                    >
-                        <S.TypeTyphographCard fontWeight={'bold !important'}>
-                            <S.IconPhp /> PHP
-                        </S.TypeTyphographCard>
-                    </S.WrapperSummary>
-                    <S.DetailsCard>
-                        <S.TypeTyphographCard>
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse
-                            malesuada lacus ex, sit amet blandit leo lobortis eget.
+                            Windows / Linux / MAC OS
                         </S.TypeTyphographCard>
                     </S.DetailsCard>
                 </S.Wrapper>
