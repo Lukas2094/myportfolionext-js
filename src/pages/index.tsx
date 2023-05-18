@@ -3,6 +3,8 @@ import axios from 'axios';
 import { Header } from '../components/Header';
 import { Carrousel } from '../components/Carrousel';
 import { Footer } from '../components/Footer';
+import { Divider } from '../components/Divider';
+import { Skills } from '../components/Skills';
 type Repository = {
   id: number;
   name: string;
@@ -22,9 +24,10 @@ const Home: NextPage<Props> = ({ repositories }) => {
     <>
     <Header />
     <Carrousel />
-
-    <hr style={{margin: '20px 0px'}}/>
-      <div>
+    
+    <Divider />
+    <Skills />
+      {/* <div>
         {repositories.map((repository) => (
           <div key={repository.id}>
             <h2>{repository.name}</h2>
@@ -33,7 +36,7 @@ const Home: NextPage<Props> = ({ repositories }) => {
             <a href={repository.html_url}>GitHub Repository</a>
           </div>
         ))}
-      </div>    
+      </div>     */}
     <Footer />
     </>
 
