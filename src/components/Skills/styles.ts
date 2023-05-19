@@ -5,7 +5,7 @@ import {IoLogoCss3 , IoLogoAngular} from 'react-icons/io';
 import {TbBrandJavascript} from 'react-icons/tb';
 import {FaReact, FaSass} from 'react-icons/fa';
 import {RiVuejsFill} from 'react-icons/ri';
-import {SiPhp,SiNextdotjs , SiTailwindcss , SiMysql , SiMariadb , SiPostgresql , SiGraphql , SiWindows , SiMacos} from 'react-icons/si';
+import {SiPhp,SiNextdotjs , SiTailwindcss , SiMysql , SiMariadb , SiPostgresql , SiGraphql , SiWindows , SiMacos , SiChakraui} from 'react-icons/si';
 import {BsBootstrapFill} from 'react-icons/bs';
 import {FcLinux} from 'react-icons/fc';
 
@@ -302,6 +302,18 @@ export const IconMAC = styled(SiMacos)`
     height: 20px;
     margin: 0 10px;
     color:  #89a1d4;
+
+    @media(min-width: 1024px){
+        width: 80px;
+        height: 80px;
+    }
+`;
+
+export const IconChakra = styled(SiChakraui)`
+    width: 20px;
+    height: 20px;
+    margin: 0 10px;
+    color:  #29b9ad;
 
     @media(min-width: 1024px){
         width: 80px;

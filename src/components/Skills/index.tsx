@@ -41,12 +41,12 @@ export function Skills() {
                     id="panel1a-header"
                     >
                         <S.TypeTyphographCard fontWeight={'bold !important'}>
-                            <S.IconCSS /> <S.IconSass /> <S.IconBootStrap /> <S.IconTailwind />
+                            <S.IconCSS /> <S.IconSass /> <S.IconBootStrap /> <S.IconTailwind /> <S.IconChakra />
                         </S.TypeTyphographCard>
                     </S.WrapperSummary>
                     <S.DetailsCard>
                         <S.TypeTyphographCard>
-                            CSS 3 / Sass / Scss / Styled-components / Material Ui / BootStrap / Tailwind CSS
+                            CSS 3 / Sass / Scss / Styled-components / Material Ui / BootStrap / Tailwind CSS / Chakra UI
                         </S.TypeTyphographCard>
                     </S.DetailsCard>
                 </S.Wrapper>
