@@ -16,15 +16,15 @@ export function Footer() {
 
             <S.SocialMediaContainer>
 
-                <S.SocialMediaLink href="https://github.com/seu-usuario-do-github">
+                <S.SocialMediaLink href="https://github.com/Lukas2094">
                     <S.GitHubIconStyled  />
                 </S.SocialMediaLink>
 
-                <S.SocialMediaLink href="https://twitter.com/seu-usuario-do-twitter">
+                <S.SocialMediaLink href="https://wa.me/5511949322230?text=LS+Tech">
                     <S.WhatsIconStyled />
                 </S.SocialMediaLink>
 
-                <S.SocialMediaLink href="https://www.linkedin.com/in/seu-usuario-do-linkedin">
+                <S.SocialMediaLink href="https://br.linkedin.com/in/lucas-santos-da-silva-91133616b">
                     <S.LinkedInIconStyled />
                 </S.SocialMediaLink>
 

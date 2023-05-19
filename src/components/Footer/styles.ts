@@ -117,14 +117,20 @@ export const SocialMediaLink = styled(Link)({
 export const GitHubIconStyled = styled(GitHub)({
     color: '#FFF', // Cor personalizada para o ícone do GitHub
     margin:'5px 0px 0 0',
+    width: '3rem',
+    height: '3rem',
   });
   
 export const WhatsIconStyled = styled(WhatsApp)({
-    color: '#00FF00', // Cor personalizada para o ícone do Twitter
+    color: '#00FF00', // Cor personalizada para o ícone do Whats
     margin:'5px 0px 0 0',
+    width: '3rem',
+    height: '3rem',
   });
   
 export const LinkedInIconStyled = styled(LinkedIn)({
     color: '#0000FF', // Cor personalizada para o ícone do LinkedIn
     margin:'2px 0px 0 0',
+    width: '3rem',
+    height: '3rem',
   });
