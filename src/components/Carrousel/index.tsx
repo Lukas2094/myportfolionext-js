@@ -18,12 +18,13 @@ export function Carrousel() {
                     delay: 2500,
                     disableOnInteraction: false,
                 }}
+                fade
                 centeredSlides={true}
                 spaceBetween={30}
                 effect={"fade"}
                 navigation={false}
                 pagination={{
-                clickable: true,
+                clickable: false,
                 }}
                 modules={[EffectFade, Navigation, Pagination , Autoplay]}
                 className="mySwiper"

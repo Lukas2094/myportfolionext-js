@@ -8,7 +8,7 @@ export function Skills() {
             <S.ContainerSkills>
 
                 <S.ContentText>
-                    <S.TextTypograph as={'p'}>
+                    <S.TextTypograph>
                         Minhas <b>Habilidades</b> 
                     </S.TextTypograph>   
                 </S.ContentText>
