@@ -95,9 +95,9 @@ export function Skills() {
                     id="panel1a-header"
                     >
                         <S.TypeTyphographCard fontWeight={'bold !important'}>
-                            <S.IconWindow /> <S.IconLinux /> <S.IconMAC />
+                            <S.IconWindow /> <S.IconLinux /> <S.IconMAC />  SISTEMAS
                         </S.TypeTyphographCard>
-                        SISTEMAS
+                     
                     </S.WrapperSummary>
                     <S.DetailsCard>
                         <S.TypeTyphographCard>
