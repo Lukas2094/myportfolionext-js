@@ -18,7 +18,7 @@ type Props = {
 };
 
 const Home: NextPage<Props> = ({ repositories }) => {
-  console.log(repositories);
+  // console.log(repositories);
   
   return (
     <>

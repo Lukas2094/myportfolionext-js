@@ -10,7 +10,7 @@ import { Box, Tabs } from '@mui/material';
 export const HeaderContainer = styled(AppBar)`
   background-color: #000;
   padding: 10px;
-  position: fixed;
+  position: sticky;
   top: 0;
   z-index: 50;
 `;

@@ -4,11 +4,7 @@ export const Container = styled.div`
 
     position: relative;
     max-height: 400px;
-    margin: 75px 0;
-
-    @media(min-width: 1024px) {
-        margin: 85px 0;
-    }
+    margin: 0;
 
     .swiper {
     width: 100%;
