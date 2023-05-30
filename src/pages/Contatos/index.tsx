@@ -14,7 +14,7 @@ const Contatos: React.FC = () => {
       <Redes />
       <Divider />
       <Divider />
-      {/* <Footer /> */}
+      <Footer />
     </S.Containers>
 
   )
