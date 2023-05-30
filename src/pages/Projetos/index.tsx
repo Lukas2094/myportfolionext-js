@@ -26,7 +26,10 @@ const Projetos: NextPage<Props> = ({repositories}) => {
         <Header />
           <Divider />
             <S.Containers>
-              <Cards repo={repositories} /> 
+              <S.Content>
+                <Cards repo={repositories} />
+              </S.Content>
+               
             </S.Containers>
           <Divider />
         <Footer />
