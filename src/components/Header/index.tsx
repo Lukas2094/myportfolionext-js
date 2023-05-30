@@ -34,7 +34,7 @@ export function Header() {
                 <S.HeaderToolBar>
                     <S.HeaderTitle variant="h6">
                     <S.StackRow direction="row" spacing={2} >
-                        <S.MyAvatar sx={{ bgcolor: deepOrange[500] }}><img src='https://media.ativo.com/adm/magento/assetsBB/LSlogo.jpg'/></S.MyAvatar>
+                        <S.MyAvatar><img src='https://media.ativo.com/adm/magento/assetsBB/LSlogo.jpg'/></S.MyAvatar>
                     </S.StackRow>
                     </S.HeaderTitle>
 
