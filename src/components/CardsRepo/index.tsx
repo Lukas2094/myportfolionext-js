@@ -15,7 +15,7 @@ interface Repo {
 
 export function Cards( { repo } : Repo) {
 
-    function titleize(text) {
+    function titleize(text: string) {
       var words = text.toLowerCase().split(" ");
       for (var a = 0; a < words.length; a++) {
           var w = words[a];
