@@ -32,7 +32,7 @@ export function Footer() {
               <S.BlockContent>
                  <S.ContainLinks>
                     <S.FooterLink href="/">Home</S.FooterLink>
-                    <S.FooterLink href="/Portfolio">Projetos</S.FooterLink>
+                    <S.FooterLink href="/Projetos">Projetos</S.FooterLink>
                     <S.FooterLink href="/Contatos">Contato</S.FooterLink>
                 </S.ContainLinks>
               </S.BlockContent>
