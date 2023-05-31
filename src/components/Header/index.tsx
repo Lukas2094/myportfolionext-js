@@ -34,7 +34,11 @@ export function Header() {
                 <S.HeaderToolBar>
                     <S.HeaderTitle variant="h6">
                     <S.StackRow direction="row" spacing={2} >
-                        <S.MyAvatar><img src='https://media.ativo.com/adm/magento/assetsBB/LSlogo.jpg'/></S.MyAvatar>
+                    <S.MyAvatar>
+                      <a href="/">
+                        <img src='https://media.ativo.com/adm/magento/assetsBB/LSlogo.jpg' />
+                      </a>
+                    </S.MyAvatar>
                     </S.StackRow>
                     </S.HeaderTitle>
 
