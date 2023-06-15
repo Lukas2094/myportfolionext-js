@@ -9,11 +9,11 @@ const Contatos: React.FC = () => {
   return (
     <S.Containers>
       <Header />
-      <Divider />
-      <Divider />
+          <Divider />
+          <Divider />
       <Redes />
-      <Divider />
-      <Divider />
+          <Divider />
+          <Divider />
       <Footer />
     </S.Containers>
 
