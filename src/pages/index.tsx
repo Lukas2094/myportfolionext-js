@@ -1,4 +1,4 @@
-import { GetServerSideProps, NextPage } from 'next';
+import { GetServerSideProps, NextPage , GetStaticProps } from 'next';
 import axios from 'axios';
 import { Header } from '../components/Header';
 import { Carrousel } from '../components/Carrousel';
@@ -27,23 +27,14 @@ const Home: NextPage<Props> = ({ repositories }) => {
     
     <Divider />
     <Skills />
-      {/* <div>
-        {repositories.map((repository) => (
-          <div key={repository.id}>
-            <h2>{repository.name}</h2>
-            <p>{repository.description}</p>
-            <p>{repository.language}</p>
-            <a href={repository.html_url}>GitHub Repository</a>
-          </div>
-        ))}
-      </div>     */}
     <Footer />
     </>
 
   );
 };
 
-export const getServerSideProps: GetServerSideProps<Props> = async () => {
+
+export const getStaticProps: GetStaticProps<Props> = async () => {
   try {
     const response = await axios.get('https://api.github.com/users/Lukas2094/repos');
 
@@ -59,6 +50,7 @@ export const getServerSideProps: GetServerSideProps<Props> = async () => {
       props: {
         repositories,
       },
+      revalidate: 3600, // Defina o tempo em segundos para atualização automática dos dados
     };
   } catch (error) {
     console.error(error);

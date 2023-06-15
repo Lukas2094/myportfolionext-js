@@ -1,6 +1,6 @@
 import React from 'react';
 import * as S from '../../styles/pageProjects';
-import { GetServerSideProps, NextPage } from 'next';
+import { GetServerSideProps, NextPage , GetStaticProps } from 'next';
 import { Header } from '../../components/Header';
 import { Footer } from '../../components/Footer';
 import { Divider } from '../../components/Divider';
@@ -38,30 +38,31 @@ const Projetos: NextPage<Props> = ({repositories}) => {
     );
 };
 
-export const getServerSideProps: GetServerSideProps<Props> = async () => {
-    try {
-      const response = await axios.get('https://api.github.com/users/Lukas2094/repos');
-      
-      const repositories: Repository[] = response.data.map((repository: any) => ({
-        id: repository.id,
-        name: repository.name,
-        description: repository.description,
-        language: repository.language,
-        html_url: repository.html_url,
-      }));
-  
-      return {
-        props: {
-          repositories,
-        },
-      };
-    } catch (error) {
-      console.error(error);
-      return {
-        notFound: true,
-      };
-    }
-  };
+export const getStaticProps: GetStaticProps<Props> = async () => {
+  try {
+    const response = await axios.get('https://api.github.com/users/Lukas2094/repos');
+
+    const repositories: Repository[] = response.data.map((repository: any) => ({
+      id: repository.id,
+      name: repository.name,
+      description: repository.description,
+      language: repository.language,
+      html_url: repository.html_url,
+    }));
+
+    return {
+      props: {
+        repositories,
+      },
+      revalidate: 3600, // Defina o tempo em segundos para atualização automática dos dados
+    };
+  } catch (error) {
+    console.error(error);
+    return {
+      notFound: true,
+    };
+  }
+};
 
 
 export default Projetos;

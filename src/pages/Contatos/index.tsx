@@ -4,7 +4,7 @@ import { Header } from '../../components/Header';
 import { Footer } from '../../components/Footer';
 import { Divider } from '../../components/Divider';
 import {Redes} from '../../components/RedesSociais';
-
+import { GetStaticProps } from 'next';
 const Contatos: React.FC = () => {
   return (
     <S.Containers>
@@ -19,5 +19,12 @@ const Contatos: React.FC = () => {
 
   )
 }
+
+export const getStaticProps: GetStaticProps = async () => {
+  return {
+    props: {},
+  };
+};
+
 
 export default Contatos;
